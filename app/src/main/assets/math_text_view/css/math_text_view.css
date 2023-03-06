@@ -1,0 +1,118 @@
+body {
+  font-family: "Latin Modern Math";
+  overflow: hidden;
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+span,
+div {
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  white-space: nowrap;
+}
+
+span:empty:before,
+div:empty:before {
+  opacity: 0.5;
+  line-height: 0;
+}
+
+.math_text_view {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  min-width: calc(100% - 30px);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.math_text_view:empty:before {
+  content: attr(hint);
+}
+
+.text:empty:before {
+  content: " ";
+  padding-left: 0.01px;
+  padding-right: 0.01px;
+}
+
+.text_hint {
+  padding: 1px;
+}
+
+.text_hint:empty:before {
+  content: "\2B1A";
+}
+
+.binary_operator {
+  margin-left: 2px;
+  margin-right: 2px;
+  opacity: 0.6;
+}
+
+.unary_prefix_operator {
+  opacity: 0.6;
+}
+
+.unary_postfix_operator {
+  opacity: 0.6;
+}
+
+.sup {
+  margin-bottom: 3ex;
+  font-size: 70%;
+}
+
+.root {
+  position: relative;
+  border-top: 0.06em solid;
+  border-left: 0.06em solid;
+  transform-origin: bottom left;
+  margin-left: 15px;
+}
+
+.root:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 0.2em;
+  left: -0.25em;
+  border-top: 0.06em solid;
+  border-right: 0.06em solid;
+  transform: skew(30deg);
+  transform-origin: bottom right;
+}
+
+.fraction {
+  text-align: center;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.fraction_line {
+  border-top: 0.06em solid;
+  display: block;
+}
+
+.brackets {
+  border-left: 0.12em solid;
+  border-right: 0.12em solid;
+  border-radius: 0.4em;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.abs {
+  border-left: 0.06em solid;
+  border-right: 0.06em solid;
+  margin-left: 1px;
+  margin-right: 1px;
+}

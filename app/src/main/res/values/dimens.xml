@@ -8,6 +8,7 @@
     <dimen name="text_size_alternative">18sp</dimen>
 
     <dimen name="diameter_bar_key">48dp</dimen>
+    <dimen name="diameter_history_key">24dp</dimen>
 
     <dimen name="delimiter_width">2dp</dimen>
 
@@ -25,4 +26,5 @@
     <dimen name="keyboard_functions_key_width">20%</dimen>
     <dimen name="keyboard_analysis_key_width">20%</dimen>
     <dimen name="keyboard_logic_key_width">20%</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>
